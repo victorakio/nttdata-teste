@@ -1,0 +1,43 @@
+.search__wrapper {
+  flex-direction: column;
+  padding: 0 2rem;
+}
+
+.search-buttons__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+
+  button {
+    width: 40%;
+  }
+}
+
+.placeholderContainer {
+  min-height: calc(100vh - 15rem);
+}
+
+@media (min-width: 767.98px) {
+  .search__wrapper {
+    flex-direction: row;
+  }
+
+  input {
+    width: 30rem;
+    margin-right: 2rem;
+  }
+
+  .search-buttons__wrapper {
+    display: unset;
+    justify-content: unset;
+    margin-top: unset;
+
+    button {
+      width: 15rem;
+
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+  }
+}

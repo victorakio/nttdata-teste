@@ -1,0 +1,8 @@
+<div class="container">
+  <h1>Meus Filmes Favoritos</h1>
+</div>
+<div class="favorites container d-flex flex-wrap gap-4">
+  <div *ngFor="let favorite of favorites">
+    <app-favorite-card [favorite]="favorite"></app-favorite-card>
+  </div>
+</div>

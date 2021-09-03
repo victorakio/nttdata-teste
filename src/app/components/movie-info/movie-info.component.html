@@ -1,0 +1,23 @@
+<div class="movie-info__wrapper container d-flex">
+  <div class="movie-info d-flex flex-column">
+    <h2>{{ movie?.Title }}</h2>
+    <p>
+      <strong>Data de lançamento: </strong>{{ movie?.Released }} |
+      <strong>Classificação: </strong>{{ movie?.Rated }} |
+      <strong>Duração: </strong>{{ movie?.Runtime }}
+    </p>
+
+    <hr />
+    <h3>Descrição</h3>
+    <p>{{ movie?.Plot }}</p>
+
+    <p><strong>Atores: </strong>{{ movie?.Actors }}</p>
+    <p><strong>Nota do público: </strong>{{ movie?.imdbRating }}</p>
+
+    <button class="btn btn-primary mb-3" (click)="setFavorite()">
+      Adicionar aos favoritos
+    </button>
+  </div>
+
+  <img src="{{ movie?.Poster }}" alt="poster do filme" />
+</div>

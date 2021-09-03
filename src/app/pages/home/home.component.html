@@ -1,0 +1,15 @@
+<div class="search__wrapper container d-flex">
+  <input type="text" id="title" placeholder="Search" />
+
+  <div class="search-buttons__wrapper">
+    <button type="submit" class="btn btn-primary" (click)="getMovie()">
+      Search
+    </button>
+    <button type="submit" class="btn btn-secondary" (click)="resetMovie()">
+      Reset
+    </button>
+  </div>
+</div>
+<div class="placeholderContainer">
+  <app-movie-info *ngIf="displayElement" [movie]="movie"></app-movie-info>
+</div>
